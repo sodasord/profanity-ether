@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/language-c,c++-orange.svg)
 ![](https://img.shields.io/badge/platform-windows,linux-yellow.svg)
 
-以太坊（ETH）靓号生成器，支持大小写匹配，利用 `gpu` 进行加速。代码开源，安全可靠 🔥
+2026完美二开修复以太坊（ETH）靓号生成器，支持大小写匹配，利用 `gpu` 进行加速。代码开源，安全可靠 🔥
 
 <img width="100%" src="/screenshot/demo.png?raw=true"/>
 
@@ -24,7 +24,8 @@
 
 ### Windows
 
-下载 `dist/windows.zip`，解压，然后直接运行 `start.bat` 即可。
+前往 [Release](https://github.com/sodasord/profanity-ether/releases/) 页面下载发布包（windows-ETH.zip
+），本地解压后直接运行 `start.bat`。
 
 > 请参考下文 `命令 & 参数` 章节说明，自行编辑 `start.bat` 配置运行参数。
 
