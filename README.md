@@ -18,7 +18,7 @@
 
 ## 说明
 
-- 本程序基于 [profanity](https://github.com/johguse/profanity) 修改而来，同时修复了原程序私钥可爆破的问题。可参考下方 `安全` 章节说明。
+- 本程序基于 [profanity] 修改而来，同时修复了原程序私钥可爆破的问题。可参考下方 `安全` 章节说明。
 
 ## 运行
 
@@ -179,7 +179,7 @@ Fbi Warning:
 
 ## 安全
 
-- 本软件基于 [profanity](https://github.com/johguse/profanity) 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the Profanity Flaw](https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab)
+- 本软件基于 [profanity] 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the Profanity Flaw](https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab)
 
 - 本软件已修复原版程序漏洞，详情可查看代码文件：`Dispatcher.cpp` -> `createSeed()`
 
@@ -211,14 +211,3 @@ cl_ulong4 Dispatcher::Device::createSeed()
 #endif
 }
 ```
-
-## 为什么开源？
-
-- 个人认为这工具其实没什么用，有钱人从来都是朴实无华，不用什么靓号。
-- 靠卖软件源码赚不了几个钱，徒耗精力。本人也不靠这个赚钱。
-- 还有一些其它原因。
-
-
-## 一点题外话
-
-现有市面上流传的 `gpu` 类靓号生成程序，基本上都是基于 `profanity` 修改而来。从技术角度来讲，如果出于作恶的目的，完全可以对原版程序的漏洞 `变本加厉`，做到 `秒秒钟` 的私钥爆破。尤其是在不提供源码，仅有一个 `exe 可执行程序` 的情况下，会让作恶的逻辑更加的黑盒。因此再次建议请勿运行任何 `非透明` 的可执行程序，在币圈这种社会达尔文主义盛行的行业，由此导致的资产损失可以说每天都在上演。言尽于此，祝大家好运 🤝
