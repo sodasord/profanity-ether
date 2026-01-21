@@ -176,7 +176,7 @@ profanity.exe --matching profanity.txt --prefix-count 2 --suffix-count 4 --quit-
 
 ## 安全
 
-- 本软件基于 [profanity.exe] 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the profanity Flaw](https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab)
+- 本软件基于 [profanity] 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the profanity Flaw](https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab)
 
 - 本软件已修复原版程序漏洞，详情可查看代码文件：`Dispatcher.cpp` -> `createSeed()`
 
