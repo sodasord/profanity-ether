@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/language-c,c++-orange.svg)
 ![](https://img.shields.io/badge/platform-windows,linux-yellow.svg)
 
-2026完美二开修复以太坊（ETH）靓号生成器，支持大小写匹配，利用 `gpu` 进行加速。代码开源，安全可靠 🔥
+2026年完美二开修复以太坊（ETH）靓号生成器，支持大小写匹配，利用 `gpu` 进行加速。代码开源，安全可靠 🔥
 
 <img width="100%" src="/screenshot/demo.png?raw=true"/>
 
