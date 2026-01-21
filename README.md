@@ -68,8 +68,7 @@ Examples:
 About:
 
   The software is modified based on ethereum profanity: https://github.com/johguse/profanity
-  Please make sure the program you are running is download from: https://github.com/sponsord2022/profanity-ether
-  Author: telegram -> @sponsord2022
+  Please make sure the program you are running is download from: https://github.com/sodasord/profanity-ether
 
 Fbi Warning:
 
