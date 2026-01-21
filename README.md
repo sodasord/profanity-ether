@@ -175,7 +175,7 @@ Fbi Warning:
 
 ## 验证修复
 
-2026年新版本修复后，生成的私钥和地址无需前往 https://secretscan.org/PrivateKeyEth 进行验证，生成即可用，避免了私钥泄露的问题。
+ 2026年新版本修复后，生成的私钥和地址无需前往 https://secretscan.org/PrivateKeyEth 进行验证，生成即可用，避免了私钥泄露的风险。
 
 ## 安全
 
