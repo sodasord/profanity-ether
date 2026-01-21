@@ -61,7 +61,6 @@ Examples:
   ./profanity --matching profanity.txt
   ./profanity --matching profanity.txt --skip 1
   ./profanity --matching profanity.txt --output result.txt
-  ./profanity --matching profanity.txt --post http://127.0.0.1:7001/api
   ./profanity --matching profanity.txt --prefix-count 1 --suffix-count 8
   ./profanity --matching profanity.txt --prefix-count 4 --suffix-count 6 --quit-count 1
   ./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 4 --suffix-count 6 --quit-count 1
@@ -87,7 +86,6 @@ Fbi Warning:
 |--suffix-count|最少匹配后缀位数，默认 6。比如你可以配置为 10，那就匹配 10 位的后缀（10位其实挺难的，估计要跑到天荒地老 :<）|
 |--quit-count|生成的地址达到指定的数量，即退出程序。比如你就想匹配一个地址，那就配置为 1。系统默认退出数量为 120|
 |--output|将生成的地址输出到文件（追加）。一行一个，格式如：privatekey,address|
-|--post|将生成的地址，发送到（GET）指定的 url，每生成一条就会发送一次。数据格式为：privatekey=xx&address=yy。这个配置主要便于其它系统的集成|
 |--skip|跳过指定索引的 gpu 设备，如启动软件出现异常，请使用此参数跳过设备集成显卡|
 
 ### 匹配规则
