@@ -54,7 +54,6 @@ Usage: ./profanity [OPTIONS]
 
   Output control:
     --output            The file to output the results to
-    --post              The url to post the results to
 
 Examples:
 
