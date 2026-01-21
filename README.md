@@ -173,9 +173,9 @@ Fbi Warning:
 
 > 请不要纠结于对比各种设备、各种平台差异化的运行速度。没意义。
 
-## 验证
+## 验证修复
 
-2026年修复生成的私钥和地址不需要去https://secretscan.org/PrivateKeyEth匹配验证，生成即可用避免了私钥泄露的问题！
+2026年新版本修复后，生成的私钥和地址无需前往 https://secretscan.org/PrivateKeyEth 进行验证，生成即可用，避免了私钥泄露的问题。
 
 ## 安全
 
