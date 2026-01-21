@@ -1,5 +1,5 @@
-# Ether Profanity
-![](https://img.shields.io/github/actions/workflow/status/sponsord/profanity-tron/release.yml)
+# Ether profanity.exe
+![](https://img.shields.io/github/actions/workflow/status/sponsord/profanity.exe-tron/release.yml)
 ![](https://img.shields.io/badge/baseon-gpu-yellowgreen.svg)
 ![](https://img.shields.io/badge/language-c,c++-orange.svg)
 ![](https://img.shields.io/badge/platform-windows,linux-yellow.svg)
@@ -14,17 +14,17 @@
 
 ## 广告
 
-需要波场（TRON）靓号生成的，请移步：[profanity-tron](https://github.com/sodasord/profanity-tron)
+需要波场（TRON）靓号生成的，请移步：[profanity.exe-tron](https://github.com/sodasord/profanity.exe-tron)
 
 ## 说明
 
-- 本程序基于 [profanity] 修改而来，同时修复了原程序私钥可爆破的问题。可参考下方 `安全` 章节说明。
+- 本程序基于 [profanity.exe] 修改而来，同时修复了原程序私钥可爆破的问题。可参考下方 `安全` 章节说明。
 
 ## 运行
 
 ### Windows
 
-前往 [Release](https://github.com/sodasord/profanity-ether/releases/) 页面下载发布包（windows-ETH.zip
+前往 [Release](https://github.com/sodasord/profanity.exe-ether/releases/) 页面下载发布包（windows-ETH.zip
 ），本地解压后直接运行 `start.bat`。
 
 > 请参考下文 `命令 & 参数` 章节说明，自行编辑 `start.bat` 配置运行参数。
@@ -36,12 +36,12 @@
 
 ### Mac
 
-下载源码，然后定位到目录下执行 `make`，接着运行 `./profanity.x64 ...` 即可。
+下载源码，然后定位到目录下执行 `make`，接着运行 `profanity.exe.x64 ...` 即可。
 
 ## 命令介绍
 
 ```bash
-Usage: ./profanity [OPTIONS]
+Usage: profanity.exe [OPTIONS]
 
   Help:
     --help              Show help information
@@ -62,16 +62,16 @@ Usage: ./profanity [OPTIONS]
 
 Examples:
 
-  ./profanity --matching profanity.txt
-  ./profanity --matching profanity.txt --skip 1
-  ./profanity --matching profanity.txt --output result.txt
-  ./profanity --matching profanity.txt --prefix-count 1 --suffix-count 8
-  ./profanity --matching profanity.txt --prefix-count 4 --suffix-count 6 --quit-count 1
-  ./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6 --quit-count 1
+  profanity.exe --matching profanity.txt
+  profanity.exe --matching profanity.txt --skip 1
+  profanity.exe --matching profanity.txt --output result.txt
+  profanity.exe --matching profanity.txt --prefix-count 1 --suffix-count 8
+  profanity.exe --matching profanity.txt --prefix-count 4 --suffix-count 6 --quit-count 1
+  profanity.exe --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6 --quit-count 1
 
 About:
 
-  Please make sure the program you are running is download from: https://github.com/sodasord/profanity-ether
+  Please make sure the program you are running is download from: https://github.com/sodasord/profanity.exe-ether
 
 Fbi Warning:
 
@@ -98,13 +98,13 @@ Fbi Warning:
 #### 单个地址
 
 ```bash
-./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6
+profanity.exe --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6
 ```
 
 #### 文件
 
 ```bash
-./profanity --matching profanity.txt --prefix-count 2 --suffix-count 4 --quit-count 1
+profanity.exe --matching profanity.txt --prefix-count 2 --suffix-count 4 --quit-count 1
 ```
 
 匹配文件里面，目前支持两种写法，可参考内置 `profanity.txt`。举个例子：
@@ -150,7 +150,7 @@ Fbi Warning:
 
 <img width="100%" src="/screenshot/vs1.png?raw=true"/>
 
-4. 以上软件安装完成后，就可以直接双击源码目录下面的 `profanity.sln`，打开项目进行开发了。
+4. 以上软件安装完成后，就可以直接双击源码目录下面的 `profanity.exe.sln`，打开项目进行开发了。
 
 > 关于 `visual studio` 如何开发、调试、构建 `cpp` 应用程序，不再本文档讨论范围。
 
@@ -176,14 +176,14 @@ Fbi Warning:
 
 ## 安全
 
-- 本软件基于 [profanity] 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the Profanity Flaw](https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab)
+- 本软件基于 [profanity.exe] 修改而来，原版程序存在私钥可爆破的漏洞，可参考：[Exploiting the profanity.exe Flaw](https://medium.com/amber-group/exploiting-the-profanity.exe-flaw-e986576de7ab)
 
 - 本软件已修复原版程序漏洞，详情可查看代码文件：`Dispatcher.cpp` -> `createSeed()`
 
 ```cpp
 cl_ulong4 Dispatcher::Device::createSeed()
 {
-#ifdef PROFANITY_DEBUG
+#ifdef profanity.exe_DEBUG
 	cl_ulong4 r;
 	r.s[0] = 1;
 	r.s[1] = 1;
@@ -191,7 +191,7 @@ cl_ulong4 Dispatcher::Device::createSeed()
 	r.s[3] = 1;
 	return r;
 #else
-  // Fix profanity seed create bug, ref: https://medium.com/amber-group/exploiting-the-profanity-flaw-e986576de7ab
+  // Fix profanity.exe seed create bug, ref: https://medium.com/amber-group/exploiting-the-profanity.exe-flaw-e986576de7ab
 	std::random_device rd;
 	std::mt19937_64 eng1(rd());
 	std::mt19937_64 eng2(rd());
