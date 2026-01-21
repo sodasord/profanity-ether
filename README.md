@@ -157,7 +157,7 @@ Fbi Warning:
 
 ## 速度
 
-本程序使用阿里云配置：`GPU 计算型 8 vCPU 32 GiB x 1 * NVIDIA V100`。运行速度在 `6亿 H/s` 左右：
+本程序使用配置：NVIDIAGeForce RTX 3080。运行速度在 2.2亿 H/s 左右：
 
 <img width="100%" src="/screenshot/demo.png?raw=true"/>
 
