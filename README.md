@@ -62,11 +62,10 @@ Examples:
   ./profanity --matching profanity.txt --output result.txt
   ./profanity --matching profanity.txt --prefix-count 1 --suffix-count 8
   ./profanity --matching profanity.txt --prefix-count 4 --suffix-count 6 --quit-count 1
-  ./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 4 --suffix-count 6 --quit-count 1
+  ./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6 --quit-count 1
 
 About:
 
-  The software is modified based on ethereum profanity: https://github.com/johguse/profanity
   Please make sure the program you are running is download from: https://github.com/sodasord/profanity-ether
 
 Fbi Warning:
@@ -94,7 +93,7 @@ Fbi Warning:
 #### 单个地址
 
 ```bash
-./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 4 --suffix-count 6
+./profanity --matching 0x59c85dc411601f76cb2fc63118567a09e32ff028 --prefix-count 2 --suffix-count 6
 ```
 
 #### 文件
@@ -120,11 +119,7 @@ Fbi Warning:
 
 > 这里主要讲讲如何构建 `windows` 平台的 `exe 可执行程序`。`mac` 机器理论上可直接 `make`，然后执行就行。
 
-> 本人在开发的时候，是买了一台阿里云 `v100 gpu卡` + `windows server 2022` 的抢占式实例。如果已经有对应的开发环境，可以不用花这个钱。
-
-### 连接到服务器
-
-> ssh，你懂的。
+> 本人在开发的时候，用的是本地的 NVIDIA GeForce RTX 3080 + windows11。
 
 ### 安装显卡驱动
 
@@ -166,7 +161,7 @@ Fbi Warning:
 
 <img width="100%" src="/screenshot/demo.png?raw=true"/>
 
-> 本程序除了在开发机（一台老旧的 Mac），以及上述 `NVIDIA v100` 显卡上经过测试外，未在其它设备上进行速度测试。
+> 本程序除了在开发机，以及上述 NVIDIA GeForce RTX 3080 显卡上经过测试外，未在其它设备上进行速度测试。
 
 > 请不要纠结于对比各种设备、各种平台差异化的运行速度。没意义。
 
